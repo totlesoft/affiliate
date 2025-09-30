@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Totlesoft Affiliate Program — Successful Digital Marketing</title>
+  <meta name="description" content="Join Totlesoft Affiliate Program — earn up to 70% commissions, multi-currency payouts (NGN, GBP, EUR, USD, Crypto, PayPal), lifetime 5% referral commissions." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="./images/tlogosmall.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+  <style>
+    /* ===== Reset & base ===== */
+    :root{
+      --bg:#071026;
+      --panel:#0f1724;
+      --muted:#9aa6b2;
+      --accent1:#6c5ce7;
+      --accent2:#ff6b98;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --card: linear-gradient(135deg, rgba(108,92,231,.12), rgba(255,107,152,.06));
+      --maxw:1100px;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(108,92,231,0.08), transparent),
+                  linear-gradient(180deg,#020617 0%, #071026 35%, #071226 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding-bottom:40px;
+    }
+
+    .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:28px;}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{width:54px;height:54px;border-radius:10px;object-fit:cover}
+    .brand h1{margin:0;font-size:20px;letter-spacing:0.2px}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+
+    nav .nav-links{display:flex;gap:12px;align-items:center}
+    a.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;box-shadow:0 8px 30px rgba(108,92,231,.12);border:none}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .small{font-size:12px;color:var(--muted);display:block;margin-top:6px}
+
+    /* ===== Hero ===== */
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:24px 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);padding:28px;border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 10px 50px rgba(2,6,23,0.6);
+      overflow:hidden;
+    }
+    .hero-left h2{font-size:34px;margin:0 0 12px 0;line-height:1.05}
+    .tag{display:inline-block;background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px}
+    .sub{color:var(--muted);margin-top:8px;max-width:65%}
+
+    .hero-cta{display:flex;gap:14px;margin-top:20px;flex-wrap:wrap}
+    .hero-stats{display:flex;gap:12px;margin-top:18px}
+    .stat{background:var(--glass);padding:12px;border-radius:10px;text-align:center;min-width:96px}
+    .stat strong{display:block;font-size:20px}
+
+    /* Right column cards */
+    .right-cards{display:flex;flex-direction:column;gap:14px}
+    .card{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);backdrop-filter: blur(6px);display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+    .card h3{margin:0;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+    .small-muted{font-size:12px;color:var(--muted)}
+
+    /* ===== Features & sections ===== */
+    section {margin-top:34px}
+    .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:var(--glass-2);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .feature h4{margin:0 0 6px 0}
+    .feature p{margin:0;color:var(--muted);font-size:13px}
+
+    /* Payment advantage card */
+    .advantage{display:flex;gap:14px;align-items:center;padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .advantage ul{margin:0;padding-left:18px;color:var(--muted)}
+
+    /* Referral */
+    .ref-card{padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);display:flex;gap:16px;align-items:center}
+    .ref-input{display:flex;gap:8px;align-items:center;width:100%}
+    .ref-input input{flex:1;padding:10px;border-radius:10px;border:none;background:rgba(255,255,255,0.03);color:inherit}
+    .copy-btn{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.03);cursor:pointer;border:1px dashed rgba(255,255,255,0.05)}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:12px;align-items:center}
+    .test-card{min-width:280px;padding:16px;border-radius:12px;background:rgb(2, 63, 64);border:1px solid rgba(255,255,255,0.03)}
+    .avatars{display:flex;gap:8px}
+    .avatars img{width:44px;height:44px;border-radius:10px;object-fit:cover;border:2px solid rgba(255,255,255,0.03)}
+
+    /* FAQ */
+    .faq .q{cursor:pointer;padding:12px;border-radius:10px;background:var(--glass);display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .faq .a{padding:10px 12px;color:var(--muted);margin-bottom:6px;border-left:3px solid rgba(108,92,231,0.25);background:transparent;border-radius:6px}
+
+    /* Footer */
+    footer{margin-top:48px;border-top:1px solid rgba(255,255,255,0.03);padding-top:22px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+
+    /* small screens */
+    @media (max-width: 980px){
+      .hero{grid-template-columns:1fr; padding:18px}
+      .hero-left .sub{max-width:100%}
+      .features-grid{grid-template-columns:1fr 1fr}
+      .testimonials{flex-direction:column;align-items:stretch}
+    }
+    @media (max-width:640px){
+      .features-grid{grid-template-columns:1fr}
+      header{padding:10px 0}
+      .nav-links{display:none}
+    }
+
+    /* subtle motion */
+    .floaty { animation: floaty 6s ease-in-out infinite; transform-origin:center; }
+    @keyframes floaty { 0%{transform:translateY(0)} 50%{transform:translateY(-8px)} 100%{transform:translateY(0)} }
+
+    .pulse {
+      position:relative;
+    }
+    .pulse::after{content:"";position:absolute;inset:0;border-radius:10px;box-shadow:0 0 40px rgba(108,92,231,0.08);opacity:0;animation:pulse 2.8s infinite}
+    @keyframes pulse{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="./images/tlogosmall.png" alt="Totlesoft logo" />
+        <div>
+          <h1>Totlesoft Affiliate</h1>
+          <p>Successful Digital Marketing</p>
+        </div>
+      </div>
+
+      <nav>
+        <div class="nav-links">
+          <a class="btn btn-ghost" href="https://totlesoft.com">Visit Totlesoft</a>
+          <a class="btn btn-primary" href="https://totlesoft.com/products">Products &amp; Apply</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <span class="tag">Become an Affiliate — Earn Big</span>
+          <h2>Grow. Share. Earn — with Totlesoft.</h2>
+          <p class="sub">Join our high-converting affiliate program. Earn up to <strong>70% commission</strong> on product sales + lifetime <strong>5% referral commission</strong> on what your invited affiliates make. Multi-currency payouts &amp; flexible payout routes — built for global reach.</p>
+
+          <div class="hero-cta">
+            <!-- Two cards/buttons as requested -->
+            <div class="card" style="min-width:220px">
+              <h3>Join Totlesoft</h3>
+              <p class="small-muted">Not Yet Registered? You need your activated email to apply as an Affiliate</p>
+              <div style="margin-top:12px;">
+                <a class="btn btn-ghost" href="https://totlesoft.com" target="_blank">Register on Totlesoft</a>
+              </div>
+            </div>
+
+            <div class="card" style="min-width:220px">
+              <h3>Join Our Affiliate</h3>
+              <p class="small-muted">Receive commissions from sale upto 70%.</p>
+              <div style="margin-top:12px;">
+                <a class="btn btn-primary" href="https://totlesoft.com/products" target="_blank">Apply as Affiliate</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>70%</strong>
+              <span class="small-muted">Max commission</span>
+            </div>
+            <div class="stat">
+              <strong>5%</strong>
+              <span class="small-muted">Lifetime referral</span>
+            </div>
+            <div class="stat">
+              <strong>Multi</strong>
+              <span class="small-muted">NGN • GBP • EUR • USD • Crypto • PayPal</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="right-cards">
+          <div class="card floaty">
+            <h3>Why Affiliates ❤️ Totlesoft</h3>
+            <p>Higher payouts, faster conversions, and the currencies your buyers prefer. Sell to top-tier countries without limiting payouts to only USD/PayPal.</p>
+            <ul style="margin-top:10px;color:var(--muted);padding-left:18px">
+              <li>Up to <strong>70%</strong> per sale</li>
+              <li>Real-time reporting &amp; dashboard</li>
+              <li>Payout options: NGN, GBP, EUR, USD, Crypto &amp; PayPal</li>
+            </ul>
+          </div>
+
+          <div class="card pulse">
+            <h3>Quick Start</h3>
+            <p class="small-muted">Steps to start earning</p>
+            <ol style="margin:10px 0 0 18px;color:var(--muted)">
+              <li>Register on Totlesoft (activate email)</li>
+              <li>Apply to the Affiliate Program</li>
+              <li>Get links, promote &amp; earn up to 70%</li>
+            </ol>
+          </div>
+        </aside>
+      </section>
+
+      <!-- FEATURES -->
+      <section>
+        <h3 style="margin:0 0 10px 0">What sets Totlesoft Affiliate apart</h3>
+        <div class="features-grid">
+          <div class="feature">
+            <h4>Top Tier Commission</h4>
+            <p>We pay up to 70% commission on qualifying product sales — built for creators and micro-influencers.</p>
+          </div>
+          <div class="feature">
+            <h4>Multi-Currency Payouts</h4>
+            <p>Unlike platforms that only pay USD via PayPal, Totlesoft supports NGN, GBP, EUR, USD, Crypto and PayPal — expand your buyer base globally.</p>
+          </div>
+          <div class="feature">
+            <h4>Lifetime Referral Bonus</h4>
+            <p>Invite other affiliates with your unique referral link and earn 5% of everything they ever make — forever.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADVANTAGE -->
+<section style="margin-top:30px">
+  <h3 style="margin:0 0 10px 0;font-size:20px;">Payment advantage vs other platforms</h3>
+  <div class="advantage">
+    <img src="./images/payoption.jpg" alt="payments" class="advantage-img" />
+    <div>
+      <p style="margin:0 0 8px 0">
+        Many affiliate programs restrict payouts to USD &amp; PayPal — limiting reach and convenience. 
+        Totlesoft empowers you to sell to customers in Nigeria, the UK, Europe, and beyond with local-friendly payouts and crypto options.
+      </p>
+      <ul>
+        <li>Sell to NGN buyers and pay out in NGN — no expensive conversion fees.</li>
+        <li>Pay affiliates in GBP/EUR for European sales.</li>
+        <li>Support for Crypto payouts for fast, global liquidity.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .advantage {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .advantage-img {
+    width: 160px;
+    height: 110px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* ✅ Mobile-friendly layout */
+  @media (max-width: 768px) {
+    .advantage {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .advantage-img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 12px;
+    }
+
+    .advantage ul {
+      text-align: left;
+      display: inline-block;
+    }
+  }
+</style>
+
+
+    <!-- Tracking System Section --> <section class="bg-gray-50 dark:bg-gray-900 py-16 px-6"> <div class="max-w-6xl mx-auto text-center"> <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6"> See Every Click. Track Every Sale. Stay in Control. </h2> <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12"> We believe in <span class="font-semibold">100% transparency</span> — that’s why you get a powerful tracking system built right in. Track your performance daily, weekly, monthly, or even yearly. See exactly how many clicks your link gets and how many sales you make — all in real time. </p> <!-- Features Grid --> <div class="grid md:grid-cols-4 gap-8"> <div class="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition"> <div class="text-blue-600 dark:text-blue-400 text-4xl mb-3">📈</div> <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Clicks Tracking</h3> <p class="text-gray-600 dark:text-gray-400 text-sm"> Instantly know how many clicks your links are getting across all your promotions. </p> </div> <div class="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition"> <div class="text-green-600 dark:text-green-400 text-4xl mb-3">💰</div> <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Sales Monitoring</h3> <p class="text-gray-600 dark:text-gray-400 text-sm"> Track every sale and conversion so you always know what’s bringing you profits. </p> </div> <div class="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition"> <div class="text-yellow-500 dark:text-yellow-400 text-4xl mb-3">📅</div> <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Detailed Insights</h3> <p class="text-gray-600 dark:text-gray-400 text-sm"> View your stats daily, weekly, monthly, or yearly to understand growth patterns. </p> </div> <div class="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition"> <div class="text-purple-600 dark:text-purple-400 text-4xl mb-3">🔍</div> <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Full Transparency</h3> <p class="text-gray-600 dark:text-gray-400 text-sm"> No hidden data — our transparent system helps you make smart decisions confidently. </p> </div> </div> <!-- CTA --> <div class="mt-12"> <a href="https://totlesoft.com/products" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition"> Get Started Today </a> </div> </div> </section>
+
+
+
+      <!-- TESTIMONIALS -->
+      <section>
+        <h3 style="margin:0 0 10px 0">What affiliates say</h3>
+        <div class="testimonials" id="testimonials">
+          <div class="test-card">
+            <div style="display:flex;align-items:center;gap:10px">
+              <img src="./images/christotle.jpg" alt="user" style="width:48px;height:48px;border-radius:10px;object-fit:cover" />
+              <div>
+                <strong>Christotle (Top Affiliate)</strong><br />
+                <span class="small-muted">Digital creator — Nigeria</span>
+              </div>
+            </div>
+            <p style="margin-top:10px;color:var(--muted)">"Totlesoft paid me faster than any other program I used. NGN payouts keep my earnings usable in-country — no weird PayPal limits."</p>
+          </div>
+
+          <div class="test-card">
+            <div style="display:flex;align-items:center;gap:10px">
+              <img src="./images/rctech.jpg" alt="user" style="width:48px;height:48px;border-radius:10px;object-fit:cover" />
+              <div>
+                <strong>Rocuma Tech</strong><br />
+                <span class="small-muted">Agency — UK</span>
+              </div>
+            </div>
+            <p style="margin-top:10px;color:var(--muted)">"70% commissions made it worth focusing on Totlesoft promos. Conversions are great and dashboard reporting is simple."</p>
+          </div>
+
+          <div class="test-card">
+            <div style="display:flex;align-items:center;gap:10px">
+              <img src="./images/mercy.jpg" alt="user" style="width:48px;height:48px;border-radius:10px;object-fit:cover" />
+              <div>
+                <strong>Mercy</strong><br />
+                <span class="small-muted">Freelancer — Ghana</span>
+              </div>
+            </div>
+            <p style="margin-top:10px;color:var(--muted)">"I invited a friend and still earn 5% from everything they earn — that passive stream surprised me."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq">
+        <h3 style="margin:0 0 10px 0">Frequently Asked Questions</h3>
+
+        <div class="q" data-q="q1">
+          <div>
+            <strong>How much can I earn?</strong>
+            <div class="small-muted">Commissions up to 70% per sale + 5% lifetime from referred affiliates.</div>
+          </div>
+          <div>+</div>
+        </div>
+        <div class="a" data-a="q1" style="display:none">
+          <p>Commission depends on product tier. Most affiliates earn 15–70% per sale based on the offer. The platform also enables bonuses and promotional campaigns with higher payouts.</p>
+        </div>
+
+        <div class="q" data-q="q2">
+          <div>
+            <strong>Which payout methods are supported?</strong>
+            <div class="small-muted">NGN, GBP, EUR, USD, Crypto &amp; PayPal.</div>
+          </div>
+          <div>+</div>
+        </div>
+        <div class="a" data-a="q2" style="display:none">
+          <p>You can choose the payout route most convenient for your region and buyers. Crypto payouts are also offered if you prefer crypto withdrawals.</p>
+        </div>
+
+        <div class="q" data-q="q3">
+          <div>
+            <strong>Do I need a website?</strong>
+            <div class="small-muted">No — social shares, reels, WhatsApp and email marketing all work.</div>
+          </div>
+          <div>+</div>
+        </div>
+        <div class="a" data-a="q3" style="display:none">
+          <p>While a website helps, many affiliates succeed using social platforms, messaging apps, and short video content. Use your referral link everywhere.</p>
+        </div>
+
+        <div class="q" data-q="q4">
+          <div>
+            <strong>How do I get my referral link?</strong>
+            <div class="small-muted">After applying and approved, we provide a dashboard and unique links.</div>
+          </div>
+          <div>+</div>
+        </div>
+        <div class="a" data-a="q4" style="display:none">
+          <p>We will provide tracking &amp; reporting inside the affiliate dashboard. Use the generator above to create a shareable friendly URL after sign up.</p>
+        </div>
+
+      </section>
+
+      <!-- CTA BANNER -->
+      <section style="margin-top:28px">
+        <div style="background:linear-gradient(90deg, rgba(108,92,231,0.12), rgba(255,107,152,0.06));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>
+            <h4 style="margin:0">Ready to scale your income?</h4>
+            <p class="small-muted" style="margin:6px 0 0 0">Apply now, get approved, and start promoting high-converting Totlesoft offers.</p>
+          </div>
+          <div style="display:flex;gap:10px">
+            <a class="btn btn-ghost" href="https://totlesoft.com" target="_blank">Register</a>
+            <a class="btn btn-primary" href="https://totlesoft.com/products" target="_blank">Apply as Affiliate</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section style="margin-top:28px">
+        <h3 style="margin:0 0 10px 0">Get the Affiliate Kit</h3>
+        <p class="small-muted">Join our mailing list to receive swipe copy, promo creatives &amp; weekly tips.</p>
+
+        <form id="subscribeForm" style="margin-top:12px;display:flex;gap:8px;max-width:520px">
+          <input id="subEmail" type="email" placeholder="you@youremail.com" style="flex:1;padding:12px;border-radius:10px;border:none;background:rgba(255,255,255,0.03);color:inherit" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <div id="subMsg" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <strong>Totlesoft</strong> — Successful Digital Marketing</div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="small-muted" href="https://totlesoft.com">Totlesoft.com</a>
+        <a class="small-muted" href="https://totlesoft.com/products">Products</a>
+        <a class="small-muted" href="mailto:support@totlesoft.com">support@totlesoft.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // ===== Simple interactivity =====
+
+    // FAQ accordion
+    document.querySelectorAll('.faq .q').forEach(q => {
+      q.addEventListener('click', () => {
+        const id = q.dataset.q;
+        const a = document.querySelector('.faq .a[data-a="'+id+'"]');
+        const open = a.style.display === 'block';
+        // close all
+        document.querySelectorAll('.faq .a').forEach(node => node.style.display = 'none');
+        // toggle
+        a.style.display = open ? 'none' : 'block';
+      });
+    });
+
+    // Referral link generator + copy
+    const generateBtn = document.getElementById('generateBtn');
+    const refInput = document.getElementById('refCode');
+    const generated = document.getElementById('generated');
+
+    generateBtn.addEventListener('click', async () => {
+      const val = (refInput.value || '').trim();
+      if(!val){
+        refInput.focus();
+        return alert('Enter a short username or code to build your referral link (e.g. christotle)');
+      }
+      // build friendly link — you will replace domain when you have actual affiliate dashboard
+      const base = 'https://totlesoft.com/ref';
+      const link = base + '/' + encodeURIComponent(val.toLowerCase());
+      try {
+        await navigator.clipboard.writeText(link);
+        generated.style.display = 'block';
+        generated.innerHTML = 'Referral link copied to clipboard: <strong style="color:#fff;">' + link + '</strong>';
+      } catch(e){
+        generated.style.display = 'block';
+        generated.innerHTML = 'Copy this link: <strong style="color:#fff;">' + link + '</strong>';
+      }
+    });
+
+    // Testimonials simple carousel: auto-scroll horizontally
+    (function autoScrollTestimonials(){
+      const el = document.getElementById('testimonials');
+      if(!el) return;
+      let pos = 0;
+      setInterval(() => {
+        pos += 300;
+        if(pos > el.scrollWidth - el.clientWidth) pos = 0;
+        el.scrollTo({left: pos, behavior: 'smooth'});
+      }, 4200);
+    })();
+
+    // Subscribe form (local action — console + nice message)
+    document.getElementById('subscribeForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const email = document.getElementById('subEmail').value.trim();
+      if(!email) return;
+      // TODO: replace with Mailchimp/Brevo/your backend endpoint when ready
+      console.log('Affiliate kit subscribe:', email);
+      const msg = document.getElementById('subMsg');
+      msg.textContent = 'Thanks! Check your inbox for the affiliate kit (we sent a sample link).';
+      this.reset();
+      setTimeout(()=> msg.textContent = '', 8000);
+    });
+
+    // small accessibility: open first FAQ on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const first = document.querySelector('.faq .q');
+      if(first) first.click();
+    });
+  </script>
+
+</body>
+</html>
