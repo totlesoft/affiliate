@@ -132,87 +132,370 @@
 
   <div class="container">
     <header>
-      <div class="brand">
-        <img src="./images/tlogosmall.png" alt="Totlesoft logo" />
-        <div>
-          <h1>Totlesoft Affiliate</h1>
-          <p>Successful Digital Marketing</p>
-        </div>
-      </div>
+  <div class="brand">
+    <img src="./images/tlogosmall.png" alt="Totlesoft logo" />
+    <div>
+      <h1>Totlesoft Affiliate</h1>
+      <p>Successful Digital Marketing</p>
+    </div>
+  </div>
 
-      <nav>
-        <div class="nav-links">
-          <a class="btn btn-ghost" href="https://totlesoft.com">Visit Totlesoft</a>
-          <a class="btn btn-primary" href="https://totlesoft.com/products">Products &amp; Apply</a>
-        </div>
-      </nav>
-    </header>
+  <nav>
+    <div class="nav-links">
+      <a class="btn btn-ghost" href="https://totlesoft.com">Visit Totlesoft</a>
+      <a class="btn btn-primary" href="https://totlesoft.com/products">Products &amp; Apply</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  /* Header layout */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #071026;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+
+  /* Brand */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .brand h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .brand p {
+    font-size: 12px;
+    color: #a5a9b2;
+    margin: 0;
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn {
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .btn-ghost {
+    color: #cdd1d9;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-primary {
+    background: linear-gradient(90deg, #6d28d9, #ec4899);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  /* ✅ Responsive behavior */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .brand {
+      width: 100%;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 8px;
+    }
+
+    .nav-links a {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+</style>
+
 
     <!-- HERO -->
     <main>
       <section class="hero">
-        <div class="hero-left">
-          <span class="tag">Become an Affiliate — Earn Big</span>
-          <h2>Grow. Share. Earn — with Totlesoft.</h2>
-          <p class="sub">Join our high-converting affiliate program. Earn up to <strong>70% commission</strong> on product sales + lifetime <strong>5% referral commission</strong> on what your invited affiliates make. Multi-currency payouts &amp; flexible payout routes — built for global reach.</p>
+  <div class="hero-left">
+    <span class="tag">Become an Affiliate — Earn Big</span>
+    <h2>Grow. Share. Earn — with Totlesoft.</h2>
+    <p class="sub">
+      Join our high-converting affiliate program. Earn up to
+      <strong>70% commission</strong> on product sales + lifetime
+      <strong>5% referral commission</strong> on what your invited affiliates make.
+      Multi-currency payouts & flexible payout routes — built for global reach.
+    </p>
 
-          <div class="hero-cta">
-            <!-- Two cards/buttons as requested -->
-            <div class="card" style="min-width:220px">
-              <h3>Join Totlesoft</h3>
-              <p class="small-muted">Not Yet Registered? You need your activated email to apply as an Affiliate</p>
-              <div style="margin-top:12px;">
-                <a class="btn btn-ghost" href="https://totlesoft.com" target="_blank">Register on Totlesoft</a>
-              </div>
-            </div>
-
-            <div class="card" style="min-width:220px">
-              <h3>Join Our Affiliate</h3>
-              <p class="small-muted">Receive commissions from sale upto 70%.</p>
-              <div style="margin-top:12px;">
-                <a class="btn btn-primary" href="https://totlesoft.com/products" target="_blank">Apply as Affiliate</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat">
-              <strong>70%</strong>
-              <span class="small-muted">Max commission</span>
-            </div>
-            <div class="stat">
-              <strong>5%</strong>
-              <span class="small-muted">Lifetime referral</span>
-            </div>
-            <div class="stat">
-              <strong>Multi</strong>
-              <span class="small-muted">NGN • GBP • EUR • USD • Crypto • PayPal</span>
-            </div>
-          </div>
+    <div class="hero-cta">
+      <div class="card">
+        <h3>Join Totlesoft</h3>
+        <p class="small-muted">
+          Not Yet Registered? You need your activated email to apply as an Affiliate
+        </p>
+        <div style="margin-top:12px;">
+          <a class="btn btn-ghost" href="https://totlesoft.com" target="_blank">Register on Totlesoft</a>
         </div>
+      </div>
 
-        <aside class="right-cards">
-          <div class="card floaty">
-            <h3>Why Affiliates ❤️ Totlesoft</h3>
-            <p>Higher payouts, faster conversions, and the currencies your buyers prefer. Sell to top-tier countries without limiting payouts to only USD/PayPal.</p>
-            <ul style="margin-top:10px;color:var(--muted);padding-left:18px">
-              <li>Up to <strong>70%</strong> per sale</li>
-              <li>Real-time reporting &amp; dashboard</li>
-              <li>Payout options: NGN, GBP, EUR, USD, Crypto &amp; PayPal</li>
-            </ul>
-          </div>
+      <div class="card">
+        <h3>Join Our Affiliate</h3>
+        <p class="small-muted">Receive commissions from sale up to 70%.</p>
+        <div style="margin-top:12px;">
+          <a class="btn btn-primary" href="https://totlesoft.com/products" target="_blank">Apply as Affiliate</a>
+        </div>
+      </div>
+    </div>
 
-          <div class="card pulse">
-            <h3>Quick Start</h3>
-            <p class="small-muted">Steps to start earning</p>
-            <ol style="margin:10px 0 0 18px;color:var(--muted)">
-              <li>Register on Totlesoft (activate email)</li>
-              <li>Apply to the Affiliate Program</li>
-              <li>Get links, promote &amp; earn up to 70%</li>
-            </ol>
-          </div>
-        </aside>
-      </section>
+    <div class="hero-stats">
+      <div class="stat">
+        <strong>70%</strong>
+        <span class="small-muted">Max commission</span>
+      </div>
+      <div class="stat">
+        <strong>5%</strong>
+        <span class="small-muted">Lifetime referral</span>
+      </div>
+      <div class="stat">
+        <strong>Multi</strong>
+        <span class="small-muted">NGN • GBP • EUR • USD • Crypto • PayPal</span>
+      </div>
+    </div>
+  </div>
+
+  <aside class="right-cards">
+    <div class="card floaty">
+      <h3>Why Affiliates ❤️ Totlesoft</h3>
+      <p>
+        Higher payouts, faster conversions, and the currencies your buyers prefer.
+        Sell to top-tier countries without limiting payouts to only USD/PayPal.
+      </p>
+      <ul>
+        <li>Up to <strong>70%</strong> per sale</li>
+        <li>Real-time reporting & dashboard</li>
+        <li>Payout options: NGN, GBP, EUR, USD, Crypto & PayPal</li>
+      </ul>
+    </div>
+
+    <div class="card pulse">
+      <h3>Quick Start</h3>
+      <p class="small-muted">Steps to start earning</p>
+      <ol>
+        <li>Register on Totlesoft (activate email)</li>
+        <li>Apply to the Affiliate Program</li>
+        <li>Get links, promote & earn up to 70%</li>
+      </ol>
+    </div>
+  </aside>
+</section>
+
+<style>
+  /* HERO LAYOUT */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+  }
+
+  .hero-left {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .hero-left h2 {
+    font-size: 32px;
+    margin: 10px 0;
+    line-height: 1.3;
+  }
+
+  .hero-left .sub {
+    color: #b7c0cc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .tag {
+    display: inline-block;
+    background: linear-gradient(90deg, #6d28d9, #ec4899);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* CTA CARDS */
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .hero-cta .card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .hero-cta .card h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  /* HERO STATS */
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .stat {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .stat strong {
+    display: block;
+    font-size: 22px;
+  }
+
+  /* RIGHT CARDS */
+  .right-cards {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-cards .card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .right-cards ul,
+  .right-cards ol {
+    margin-top: 10px;
+    color: #b7c0cc;
+    padding-left: 18px;
+  }
+
+  /* BUTTONS */
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .btn-ghost {
+    color: #cdd1d9;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-primary {
+    background: linear-gradient(90deg, #6d28d9, #ec4899);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  /* ✅ RESPONSIVE STYLES */
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .hero-left,
+    .right-cards {
+      width: 100%;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+    }
+
+    .hero-cta .card {
+      width: 100%;
+    }
+
+    .hero-stats {
+      flex-direction: column;
+    }
+
+    .stat {
+      width: 100%;
+    }
+
+    .right-cards .card {
+      width: 100%;
+    }
+
+    .hero-left h2 {
+      font-size: 26px;
+      text-align: left;
+    }
+
+    .hero-left .sub {
+      text-align: left;
+    }
+  }
+</style>
+
 
       <!-- FEATURES -->
       <section>
