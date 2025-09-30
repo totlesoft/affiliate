@@ -323,18 +323,32 @@
 <style>
   /* HERO LAYOUT */
   .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 40px 20px;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;       /* ✅ Limit total content width */
+  margin: 0 auto;           /* ✅ Center it horizontally */
+  box-sizing: border-box;
+}
 
-  .hero-left {
-    flex: 1;
-    min-width: 300px;
-  }
+  /* ✅ Ensure child elements don’t hit wall edges */
+.hero-left,
+.right-cards {
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
+  padding-right: 10px;      /* small inner space */
+}
+
+/* ✅ Ensure cards have inner padding and don’t overflow */
+.hero .card {
+  box-sizing: border-box;
+  width: 100%;
+  word-wrap: break-word;
+}
 
   .hero-left h2 {
     font-size: 32px;
@@ -456,14 +470,21 @@
   /* ✅ RESPONSIVE STYLES */
   @media (max-width: 900px) {
     .hero {
-      flex-direction: column;
-      align-items: stretch;
-    }
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px 16px;     /* balanced on both sides */
+  }
 
-    .hero-left,
-    .right-cards {
-      width: 100%;
-    }
+
+     .hero-left,
+  .right-cards {
+    width: 100%;
+    padding-right: 0;       /* remove extra padding */
+  }
+
+  .hero .card {
+    width: 100%;
+  }
 
     .hero-cta {
       flex-direction: column;
