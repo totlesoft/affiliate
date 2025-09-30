@@ -468,44 +468,159 @@
 
 
 
-      <!-- TESTIMONIALS -->
-      <section>
-        <h3 style="margin:0 0 10px 0;font-size:20px;">What affiliates say</h3>
-        <div class="testimonials" id="testimonials">
-          <div class="test-card">
-            <div style="display:flex;align-items:center;gap:10px">
-              <img src="./images/christotle.jpg" alt="user" style="width:48px;height:48px;border-radius:10px;object-fit:cover" />
-              <div>
-                <strong>Christotle (Top Affiliate)</strong><br />
-                <span class="small-muted">Digital creator — Nigeria</span>
-              </div>
-            </div>
-            <p style="margin-top:10px;color:var(--muted)">"Totlesoft paid me faster than any other program I used. NGN payouts keep my earnings usable in-country — no weird PayPal limits."</p>
-          </div>
+      <!-- 🌟 TESTIMONIALS -->
+<section class="testimonial-section">
+  <div class="container">
+    <h2 class="testimonial-title">What Our Affiliates Are Saying 💬</h2>
+    <p class="testimonial-subtitle">
+      Real success stories from affiliates who’ve earned and grown with <strong>Totlesoft</strong>.
+    </p>
 
-          <div class="test-card">
-            <div style="display:flex;align-items:center;gap:10px">
-              <img src="./images/rctech.jpg" alt="user" style="width:48px;height:48px;border-radius:10px;object-fit:cover" />
-              <div>
-                <strong>Rocuma Tech</strong><br />
-                <span class="small-muted">Agency — UK</span>
-              </div>
-            </div>
-            <p style="margin-top:10px;color:var(--muted)">"70% commissions made it worth focusing on Totlesoft promos. Conversions are great and dashboard reporting is simple."</p>
-          </div>
-
-          <div class="test-card">
-            <div style="display:flex;align-items:center;gap:10px">
-              <img src="./images/mercy.jpg" alt="user" style="width:48px;height:48px;border-radius:10px;object-fit:cover" />
-              <div>
-                <strong>Mercy</strong><br />
-                <span class="small-muted">Freelancer — Ghana</span>
-              </div>
-            </div>
-            <p style="margin-top:10px;color:var(--muted)">"I invited a friend and still earn 5% from everything they earn — that passive stream surprised me."</p>
+    <div class="testimonials-grid">
+      <!-- Card 1 -->
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="./images/christotle.jpg" alt="Christotle" class="testimonial-avatar" />
+          <div>
+            <h4>Christotle (Top Affiliate)</h4>
+            <span class="location">Digital Creator — Nigeria</span>
           </div>
         </div>
-      </section>
+        <p class="testimonial-text">
+          “Totlesoft paid me faster than any other program I used. NGN payouts keep my earnings usable in-country — no weird PayPal limits.”
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="./images/rctech.jpg" alt="Rocuma Tech" class="testimonial-avatar" />
+          <div>
+            <h4>Rocuma Tech</h4>
+            <span class="location">Agency — UK</span>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          “70% commissions made it worth focusing on Totlesoft promos. Conversions are great and dashboard reporting is simple.”
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="./images/mercy.jpg" alt="Mercy" class="testimonial-avatar" />
+          <div>
+            <h4>Mercy</h4>
+            <span class="location">Freelancer — Ghana</span>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          “I invited a friend and still earn 5% from everything they earn — that passive stream surprised me.”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 💅 Styles -->
+<style>
+  .testimonial-section {
+    background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .testimonial-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #111827;
+  }
+
+  .testimonial-subtitle {
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    font-size: 1rem;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .testimonial-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  }
+
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .testimonial-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #3b82f6;
+  }
+
+  .testimonial-card h4 {
+    margin: 0;
+    font-weight: 700;
+    color: #111827;
+  }
+
+  .location {
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+
+  .testimonial-text {
+    color: #374151;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* 🌙 Dark Mode Ready */
+  @media (prefers-color-scheme: dark) {
+    .testimonial-section {
+      background: linear-gradient(180deg, #111827 0%, #1f2937 100%);
+    }
+    .testimonial-title {
+      color: #f9fafb;
+    }
+    .testimonial-subtitle {
+      color: #9ca3af;
+    }
+    .testimonial-card {
+      background: #1f2937;
+      color: #e5e7eb;
+      box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+    }
+    .testimonial-text {
+      color: #d1d5db;
+    }
+  }
+</style>
+
 
       <!-- FAQ -->
       <section class="faq">
@@ -616,6 +731,14 @@
       </a>
       <p class="text-gray-500 dark:text-gray-400 text-sm mt-3">Join Totlesoft Affiliate Program & start promoting like a pro.</p>
     </div>
+  </div>
+</section>
+
+
+<!-- Full-Width Hero Image Section 2 down -->
+<section class="full-image-section">
+  <div class="image-wrapper">
+    <img src="./images/tcimage2.jpg" alt="Promotional Banner" class="responsive-img" />
   </div>
 </section>
 
