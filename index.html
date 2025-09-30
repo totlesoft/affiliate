@@ -67,6 +67,38 @@
     .stat{background:var(--glass);padding:12px;border-radius:10px;text-align:center;min-width:96px}
     .stat strong{display:block;font-size:20px}
 
+
+    @media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: none;
+    padding: 30px 20px; /* ✅ adds left and right padding */
+  }
+
+  .hero-left,
+  .right-cards {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sub {
+    max-width: 100%;
+  }
+
+  .hero-cta,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .right-cards .card {
+    width: 100%;
+    text-align: left;
+  }
+}
+
     /* Right column cards */
     .right-cards{display:flex;flex-direction:column;gap:14px}
     .card{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);backdrop-filter: blur(6px);display:flex;flex-direction:column;gap:6px;align-items:flex-start}
