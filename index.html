@@ -345,6 +345,104 @@
         </aside>
       </section>
 
+
+      
+<!-- Full-Width Hero Image Section -->
+<section class="full-image-section">
+  <div class="image-wrapper">
+    <img src="./images/tcimage.jpg" alt="Promotional Banner" class="responsive-img" />
+  </div>
+</section>
+
+<style>
+  .full-image-section {
+    width: 100%;
+    background-color: #000; /* fallback background — looks good if image has transparent edges */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* ✅ ensures the full image is always visible */
+    object-position: center;
+    display: block;
+  }
+
+  /* Optional: give mobile devices a bit more vertical space */
+  @media (max-width: 768px) {
+    .image-wrapper {
+      width: 100%;
+    }
+    .responsive-img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+</style>
+
+
+
+
+       <!-- Payment Advantage Section -->
+<section class="bg-gray-50 dark:bg-gray-900 py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        Payment Advantages That Empower Every Affiliate 🌍
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        While most affiliate programs limit payouts to <span class="font-semibold text-blue-600 dark:text-blue-400">USD and PayPal</span>,  
+        <span class="font-semibold">Totlesoft breaks the boundaries</span> — giving you freedom to earn and withdraw your commissions 
+        <span class="font-semibold">in your preferred currency, from anywhere.</span>
+      </p>
+    </div>
+
+    <!-- Content Layout -->
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <!-- Image -->
+      <div class="flex-shrink-0">
+        <img src="./images/payoption.jpg" alt="Payment Options" class="rounded-2xl shadow-md w-full max-w-sm object-cover" />
+      </div>
+
+      <!-- Content -->
+      <div class="flex-1">
+        <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-green-600 dark:text-green-400 text-2xl mt-1">💸</span>
+            <p><span class="font-semibold">Get paid in your local currency</span> — receive payouts in NGN, GBP, EUR, or USD without losing money to exchange fees.</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 dark:text-blue-400 text-2xl mt-1">🌍</span>
+            <p><span class="font-semibold">Expand globally with ease</span> — sell to international buyers while receiving your commissions locally.</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-yellow-500 dark:text-yellow-400 text-2xl mt-1">⚡</span>
+            <p><span class="font-semibold">Fast crypto payouts</span> — receive instant global payments in USDT or BTC for unmatched speed and convenience.</p>
+          </li>
+        </ul>
+
+        <!-- CTA -->
+        <div class="mt-10">
+          <a href="https://totlesoft.com/products" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition">
+            Join Now — Start Earning Globally
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       <!-- FEATURES -->
       <section>
         <h3 style="margin:0 0 10px 0;font-size:20px;">What sets Totlesoft Affiliate apart</h3>
@@ -363,62 +461,7 @@
           </div>
         </div>
       </section>
-
-      <!-- ADVANTAGE -->
-<section style="margin-top:30px">
-  <h3 style="margin:0 0 10px 0;font-size:20px;">Payment advantage vs other platforms</h3>
-  <div class="advantage">
-    <img src="./images/payoption.jpg" alt="payments" class="advantage-img" />
-    <div>
-      <p style="margin:0 0 8px 0">
-        Many affiliate programs restrict payouts to USD &amp; PayPal — limiting reach and convenience. 
-        Totlesoft empowers you to sell to customers in Nigeria, the UK, Europe, and beyond with local-friendly payouts and crypto options.
-      </p>
-      <ul>
-        <li>Sell to NGN buyers and pay out in NGN — no expensive conversion fees.</li>
-        <li>Pay affiliates in GBP/EUR for European sales.</li>
-        <li>Support for Crypto payouts for fast, global liquidity.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<style>
-  .advantage {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
-  .advantage-img {
-    width: 160px;
-    height: 110px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  /* ✅ Mobile-friendly layout */
-  @media (max-width: 768px) {
-    .advantage {
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-    }
-
-    .advantage-img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      margin-bottom: 14px;
-    }
-
-    .advantage ul {
-      text-align: left;
-      display: inline-block;
-    }
-  }
-</style>
+     
 
 
     <!-- Tracking System Section --> <section class="bg-gray-50 dark:bg-gray-900 py-16 px-6"> <div class="max-w-6xl mx-auto text-center"> <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6"> See Every Click. Track Every Sale. Stay in Control. </h2> <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12"> We believe in <span class="font-semibold">100% transparency</span> — that’s why you get a powerful tracking system built right in. Track your performance daily, weekly, monthly, or even yearly. See exactly how many clicks your link gets and how many sales you make — all in real time. </p> <!-- Features Grid --> <div class="grid md:grid-cols-4 gap-8"> <div class="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition"> <div class="text-blue-600 dark:text-blue-400 text-4xl mb-3">📈</div> <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Clicks Tracking</h3> <p class="text-gray-600 dark:text-gray-400 text-sm"> Instantly know how many clicks your links are getting across all your promotions. </p> </div> <div class="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition"> <div class="text-green-600 dark:text-green-400 text-4xl mb-3">💰</div> <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Sales Monitoring</h3> <p class="text-gray-600 dark:text-gray-400 text-sm"> Track every sale and conversion so you always know what’s bringing you profits. </p> </div> <div class="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition"> <div class="text-yellow-500 dark:text-yellow-400 text-4xl mb-3">📅</div> <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Detailed Insights</h3> <p class="text-gray-600 dark:text-gray-400 text-sm"> View your stats daily, weekly, monthly, or yearly to understand growth patterns. </p> </div> <div class="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition"> <div class="text-purple-600 dark:text-purple-400 text-4xl mb-3">🔍</div> <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Full Transparency</h3> <p class="text-gray-600 dark:text-gray-400 text-sm"> No hidden data — our transparent system helps you make smart decisions confidently. </p> </div> </div> <!-- CTA --> <div class="mt-12"> <a href="https://totlesoft.com/products" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition"> Get Started Today </a> </div> </div> </section>
@@ -513,6 +556,69 @@
         </div>
 
       </section>
+
+
+
+      <!-- Promo Materials Section -->
+<section class="bg-white dark:bg-gray-950 py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+      We Don’t Just Approve You — <span class="text-blue-600 dark:text-blue-400">We Equip You to Win!</span>
+    </h2>
+    <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
+      Get access to <span class="font-semibold">professionally designed promo materials</span> made to help you sell fast — 
+      from <span class="text-blue-600 dark:text-blue-400">eye-catching videos</span> and 
+      <span class="text-blue-600 dark:text-blue-400">high-converting banners</span> 
+      to ready-to-send <span class="text-blue-600 dark:text-blue-400">email swipes</span> and 
+      <span class="text-blue-600 dark:text-blue-400">social post templates</span>. 
+      You promote — we handle the heavy lifting.
+    </p>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="bg-gray-50 dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-blue-600 dark:text-blue-400 text-4xl mb-3">🎬</div>
+        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Promo Videos</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">
+          Share ready-made promo videos optimized for reels, YouTube Shorts & social ads.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-pink-600 dark:text-pink-400 text-4xl mb-3">🖼️</div>
+        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Banners & Graphics</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">
+          Access a full suite of high-performing images and graphics — ready to plug into your campaigns.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-green-600 dark:text-green-400 text-4xl mb-3">📧</div>
+        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Email Swipes</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">
+          Copy-paste winning email templates designed to convert cold leads into hot buyers.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 dark:bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-yellow-500 dark:text-yellow-400 text-4xl mb-3">📱</div>
+        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Social Templates</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">
+          Ready-to-post social captions and designs built for WhatsApp, Instagram & Facebook.
+        </p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-12">
+      <a href="https://totlesoft.com/products" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition">
+        Access Affiliate Resources Now
+      </a>
+      <p class="text-gray-500 dark:text-gray-400 text-sm mt-3">Join Totlesoft Affiliate Program & start promoting like a pro.</p>
+    </div>
+  </div>
+</section>
+
 
       <!-- CTA BANNER -->
       <section style="margin-top:28px">
